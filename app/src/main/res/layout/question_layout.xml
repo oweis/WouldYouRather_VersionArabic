@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <Button
+        android:id="@+id/blue_question"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/btn_blue"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:text="Question 1" />
+
+    <Button
+        android:id="@+id/red_question"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/btn_red"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/blue_question"
+        android:text="Question 2" />
+
+    <Button
+        android:id="@+id/or_btn"
+        android:background="@drawable/btn_or"
+        android:text="OR"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/blue_question"
+        android:layout_marginTop="-25dp"
+        android:textColor="#fff"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+
+</RelativeLayout>
