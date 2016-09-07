@@ -7,7 +7,33 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.appsgemzi.zouheir.wouldyourather2.MainActivity">
+    tools:context=".Either.MainActivity">
 
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Play"
+        android:id="@+id/buttonPlay"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="openPlay"
+        />
 
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Send question"
+        android:id="@+id/buttonSendQuestion"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/buttonPlay"
+        android:onClick="openSendQuestion"/>
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Show me questions"
+        android:layout_below="@+id/buttonSendQuestion"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/buttonShowMeMyQuestions"/>
 </RelativeLayout>

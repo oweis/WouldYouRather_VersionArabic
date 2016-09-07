@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="#EB2B36"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/namePassByUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:gravity="right"
+        android:paddingBottom="5dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:text="Question 1"
+        android:textColor="#EB2B36" />
+
+    <TextView
+        android:id="@+id/nameUsedInLear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/namePassByUser"
+        android:text="Answer 1"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/nameUsedInClient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/date"
+        android:layout_below="@+id/nameUsedInLear"
+        android:text="Answer 2"
+        android:textColor="#ffffff" />
+
+    <!--
+        <Button
+            android:id="@+id/buttonIdFamily"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="sendIdFamily"
+            android:tag="0"
+             android:drawableLeft="@drawable/button_family"
+            android:text="" /> -->
+</LinearLayout>
