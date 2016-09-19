@@ -15,11 +15,16 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void openPlay(View v){
+    public void openPlay(View v) {
         startActivity(new Intent(MainActivity.this, Play.class));
     }
-    public void openSendQuestion(View v){
+
+    public void openSendQuestion(View v) {
         startActivity(new Intent(MainActivity.this, SendQuestion.class));
+    }
+
+    public void openShowMyQuestions(View v) {
+        startActivity(new Intent(MainActivity.this, ShowMyQuestions.class));
     }
 
 }

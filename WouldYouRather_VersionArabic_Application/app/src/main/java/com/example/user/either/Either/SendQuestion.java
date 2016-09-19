@@ -6,10 +6,10 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.user.either.ClientAPI.BackgroundTask;
 import com.example.user.either.Model.Question;
 import com.example.user.either.R;
 
-import org.w3c.dom.Text;
 
 public class SendQuestion extends AppCompatActivity {
     TextView textViewAnswer1,textViewAnswer2;
@@ -38,6 +38,7 @@ public class SendQuestion extends AppCompatActivity {
     }
 
     public void insertIntoDatabase(Question question){
-        //TODO : function  save question into database
+        BackgroundTask backgroundTask = new BackgroundTask();
+        backgroundTask.insertIntoDatabase(question);
     }
 }

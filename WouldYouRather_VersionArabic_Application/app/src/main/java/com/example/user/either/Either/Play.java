@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.user.either.ClientAPI.BackgroundTask;
 import com.example.user.either.Model.Answer;
 import com.example.user.either.Model.Question;
 import com.example.user.either.Model.User;
@@ -77,21 +78,8 @@ public class Play extends AppCompatActivity {
 
 
     public ArrayList<Question> createQuestionList() {
-        //FAKE : serve get questions from database
-        //TODO update with real one
-        ArrayList<Question> questions = new ArrayList<>();
-        Question question1 = new Question(1, 1, "Lays", "Doritos", new Date());
-        Question question2 = new Question(2, 1, "Coca cola", "Pepsi", new Date());
-        Question question3 = new Question(3, 1, "Zara", "Gucci", new Date());
-        Question question4 = new Question(4, 1, "Asus", "HP", new Date());
-        Question question5 = new Question(5, 1, "Be Rich, Die Young", "Be Poor, Live for ever", new Date());
-
-        questions.add(question1);
-        questions.add(question2);
-        questions.add(question3);
-        questions.add(question4);
-        questions.add(question5);
-        return questions;
+        BackgroundTask backgroundTask = new BackgroundTask();
+        return backgroundTask.createQuestionList();
     }
 
     public User setUser() {

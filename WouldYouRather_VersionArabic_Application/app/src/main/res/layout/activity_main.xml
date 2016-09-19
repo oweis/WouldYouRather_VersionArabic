@@ -31,9 +31,10 @@
     <Button
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:text="Show me questions"
+        android:text="Show my questions"
         android:layout_below="@+id/buttonSendQuestion"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        android:id="@+id/buttonShowMeMyQuestions"/>
+        android:id="@+id/buttonShowMyQuestions"
+        android:onClick="openShowMyQuestions"/>
 </RelativeLayout>
