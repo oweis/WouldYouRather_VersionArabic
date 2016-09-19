@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Either</string>
+    <string name="err_msg_login">Enter your login</string>
+    <string name="err_msg_password">Enter the password</string>
+    <string name="hint_login">login</string>
+    <string name="hint_password">password</string>
+    <string name="btn_login">Log in</string>
+
+
 </resources>
