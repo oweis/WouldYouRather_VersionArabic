@@ -18,6 +18,13 @@
         android:layout_centerHorizontal="true"
         android:onClick="openPlay"
         />
+        
+        <Button
+        android:id="@+id/loginBtn"
+        android:text="Login"
+        android:onClick="login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
     <Button
         android:layout_width="150dp"
